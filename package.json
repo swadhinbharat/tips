@@ -4,10 +4,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "keywords": [],
   "author": "Swadhin Patel",
   "license": "ISC",
-  "description": "Collections of tips for developers"
+  "description": "Collections of tips for developers",
+  "devDependencies": {
+    "vitepress": "^1.3.0"
+  }
 }
