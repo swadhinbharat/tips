@@ -19,12 +19,13 @@ export default defineConfig({
         text: 'Tools',
         items: [
           {
-            text: 'Windows', link: '/tools/windows/',
+            text: 'Windows', link: '/tools/windows',
             items: [
               { text: 'Windows Terminal', link: '/tools/windows/windows-terminal' },
+              { text: 'Clipboard in Windows', link: '/tools/windows/clipboard-in-windows' },
               { text: 'Windows Subsystem for Linux (WSL)', link: '/tools/windows/wsl' },
               { text: 'PowerShell', link: '/tools/windows/powershell' },
-              { text: 'Windows Clipboard', link: '/tools/windows/clipboard-in-windows' }
+              { text: 'Windows Package Manager (winget)', link: '/tools/windows/winget' },
             ]
           },
         ]

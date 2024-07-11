@@ -1,5 +1,5 @@
 ---
-# outline: deep
+outline: deep
 ---
 
-- [Windows](windows)
+- [Windows](/tools/windows/index.md)
