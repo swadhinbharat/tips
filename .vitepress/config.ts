@@ -5,25 +5,50 @@ export default defineConfig({
   title: "Tips",
   description: "Tips and Tricks",
   base: '/tips/',
+  // dir: './docs/',
+  srcDir: 'docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Tools', link: '/tools' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Tools',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {
+            text: 'Windows', link: '/tools/windows',
+            items: [
+              { text: 'Windows Terminal', link: '/tools/windows/windows-terminal' },
+              { text: 'Clipboard in Windows', link: '/tools/windows/clipboard-in-windows' },
+              { text: 'Windows Subsystem for Linux (WSL)', link: '/tools/windows/wsl' },
+              { text: 'PowerShell', link: '/tools/windows/powershell' },
+              { text: 'Windows Package Manager (winget)', link: '/tools/windows/winget' },
+            ]
+          },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/swadhinbharat/tips' },
     ]
-  }
+  }, 
+  head: [
+    [
+      'script',
+      {
+        async: "true",
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-JCJKVM8CHN',
+      },
+    ],
+    [
+      'script',
+      {},
+      
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-JCJKVM8CHN');",
+    ],
+  ],
 })
