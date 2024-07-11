@@ -5,25 +5,34 @@ export default defineConfig({
   title: "Tips",
   description: "Tips and Tricks",
   base: '/tips/',
+  // dir: './docs/',
+  srcDir: 'docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Tools', link: '/tools' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Tools',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {
+            text: 'Windows', link: '/tools/windows/',
+            items: [
+              { text: 'Windows Terminal', link: '/tools/windows/windows-terminal' },
+              { text: 'Windows Subsystem for Linux (WSL)', link: '/tools/windows/wsl' },
+              { text: 'PowerShell', link: '/tools/windows/powershell' },
+              { text: 'Windows Clipboard', link: '/tools/windows/clipboard-in-windows' }
+            ]
+          },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/swadhinbharat/tips' }
+      { icon: 'github', link: 'https://github.com/swadhinbharat/tips' },
     ]
   }
 })
