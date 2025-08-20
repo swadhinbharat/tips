@@ -19,6 +19,12 @@ export default defineConfig({
         text: 'Tools',
         items: [
           {
+            text: 'Chrome', link: '/tools/chrome',
+            items: [
+              { text: 'Tab Management', link: '/tools/chrome/tab-management' },
+            ]
+          },
+          {
             text: 'Windows', link: '/tools/windows',
             items: [
               { text: 'Windows Terminal', link: '/tools/windows/windows-terminal' },
