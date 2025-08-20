@@ -19,13 +19,13 @@ export default defineConfig({
         text: 'Tools',
         items: [
           {
-            text: 'Chrome', link: '/tools/chrome',
+            text: 'Chrome', link: '/tools/chrome/',
             items: [
               { text: 'Tab Management', link: '/tools/chrome/tab-management' },
             ]
           },
           {
-            text: 'Windows', link: '/tools/windows',
+            text: 'Windows', link: '/tools/windows/',
             items: [
               { text: 'Windows Terminal', link: '/tools/windows/windows-terminal' },
               { text: 'Clipboard in Windows', link: '/tools/windows/clipboard-in-windows' },
