@@ -2,5 +2,5 @@
 outline: deep
 ---
 
-- [Chrome](/tools/chrome/index.md)
-- [Windows](/tools/windows/index.md)
+- [Chrome](/tools/chrome/)
+- [Windows](/tools/windows/)
