@@ -15,7 +15,7 @@ You can move multiple tabs to a new window or group them together using keyboard
   - Group them together (Chrome 83+)
 
 **Creating Tab Groups:**
-- Right-click on selected tabs and choose "Add to new group"
+- Right-click on selected tabs and choose "Add to new group" or "Group tabs" (menu wording may vary)
 - Or drag selected tabs to the tab group area
 
 ::: tip
